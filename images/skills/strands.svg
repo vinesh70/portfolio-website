@@ -1,10 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <!-- Strand 1 - top wave -->
-  <path d="M 10 35 C 25 20 35 20 50 35 C 65 50 75 50 90 35" fill="none" stroke="#f472b6" stroke-width="5.5" stroke-linecap="round"/>
-  <!-- Strand 2 - mid wave -->
-  <path d="M 10 50 C 25 35 35 35 50 50 C 65 65 75 65 90 50" fill="none" stroke="#c084fc" stroke-width="5.5" stroke-linecap="round"/>
-  <!-- Strand 3 - bottom wave -->
-  <path d="M 10 65 C 25 50 35 50 50 65 C 65 80 75 80 90 65" fill="none" stroke="#818cf8" stroke-width="5.5" stroke-linecap="round"/>
-  <!-- AI dot -->
-  <circle cx="50" cy="50" r="6" fill="white" opacity="0.9"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="s1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="s2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="s3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="18" fill="url(#bg)"/>
+  <!-- Strand 1 -->
+  <path d="M 12 30 C 28 15, 42 15, 50 30 C 58 45, 72 45, 88 30"
+    fill="none" stroke="url(#s1)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Strand 2 -->
+  <path d="M 12 50 C 28 35, 42 35, 50 50 C 58 65, 72 65, 88 50"
+    fill="none" stroke="url(#s2)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Strand 3 -->
+  <path d="M 12 70 C 28 55, 42 55, 50 70 C 58 85, 72 85, 88 70"
+    fill="none" stroke="url(#s3)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Connecting rungs (DNA ladder style) -->
+  <line x1="30" y1="22" x2="30" y2="58" stroke="white" stroke-width="1.5" opacity="0.2"/>
+  <line x1="50" y1="30" x2="50" y2="70" stroke="white" stroke-width="1.5" opacity="0.2"/>
+  <line x1="70" y1="38" x2="70" y2="78" stroke="white" stroke-width="1.5" opacity="0.2"/>
+  <!-- Glow dots at intersections -->
+  <circle cx="50" cy="30" r="3.5" fill="#f9a8d4" opacity="0.9"/>
+  <circle cx="50" cy="50" r="3.5" fill="#c084fc" opacity="0.9"/>
+  <circle cx="50" cy="70" r="3.5" fill="#818cf8" opacity="0.9"/>
 </svg>
