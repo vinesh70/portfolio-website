@@ -1357,7 +1357,8 @@ section { position: relative; z-index: 1; }
 
 #pdf-resume {
   width: 794px;
-  min-height: 1123px;
+  height: 1123px;
+  overflow: hidden;
   background: #ffffff;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #1e293b;
@@ -1406,7 +1407,8 @@ section { position: relative; z-index: 1; }
 /* Body */
 .rp-body {
   display: flex;
-  min-height: calc(1123px - 142px);
+  height: calc(1123px - 138px);
+  overflow: hidden;
 }
 
 /* Sidebar */
@@ -1598,6 +1600,71 @@ section { position: relative; z-index: 1; }
   color: #475569;
   line-height: 1.6;
   margin: 0;
+}
+
+/* Resume cert items in sidebar */
+.rp-cert-item { margin-bottom: 10px; }
+
+.rp-cert-name {
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+}
+
+.rp-cert-issuer {
+  font-size: 8px;
+  color: #64748b;
+  margin-top: 1px;
+  font-weight: 400;
+}
+
+.rp-cert-code {
+  display: inline-block;
+  font-size: 7.5px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-top: 2px;
+  font-family: monospace;
+}
+
+/* Resume clickable links */
+.rp-ci a,
+.rp-link-item a {
+  color: rgba(255,255,255,0.82);
+  text-decoration: none;
+}
+
+.rp-link-item a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Resume project live link */
+.rp-proj-link {
+  font-size: 7.5px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 1px 6px;
+  border-radius: 4px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Skills sub-category label */
+.rp-skill-cat {
+  font-size: 7.5px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 7px 0 3px;
 }
 
 /* AI/Cloud skill tags in skills section */
