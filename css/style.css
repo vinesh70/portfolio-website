@@ -415,56 +415,92 @@ section { position: relative; z-index: 1; }
   min-height: 520px;
 }
 
-/* Profile photo — passport style */
+/* Profile photo — premium circular */
 .profile-photo-wrap {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
 }
 
-.profile-photo {
-  width: 300px;
-  height: 360px;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: var(--r-xl);
-  position: relative;
-  z-index: 2;
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border);
-  transition: transform var(--d2) var(--ease), box-shadow var(--d2) var(--ease);
-}
-
-.profile-photo:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 32px 100px rgba(0, 0, 0, 0.7), var(--glow2);
-}
-
+/* Spinning gradient border ring */
 .profile-photo-ring {
   position: absolute;
-  width: 320px;
-  height: 380px;
-  border-radius: calc(var(--r-xl) + 6px);
-  border: 1.5px solid rgba(79, 142, 247, 0.3);
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, var(--blue), var(--cyan), var(--purple), var(--blue));
+  animation: ring-spin 4s linear infinite;
   z-index: 1;
-  animation: ring-pulse 3s ease-in-out infinite;
 }
 
+.profile-photo-ring::after {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--bg-1);
+}
+
+@keyframes ring-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Photo itself */
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  display: block;
+  transition: transform var(--d2) var(--ease);
+}
+
+.profile-photo:hover { transform: scale(1.04); }
+
+/* Glow beneath */
 .profile-photo-glow {
   position: absolute;
-  width: 260px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(79, 142, 247, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(79, 142, 247, 0.3), transparent 70%);
+  bottom: 20px;
   z-index: 0;
-  bottom: 0;
-  filter: blur(30px);
+  filter: blur(28px);
+  animation: glow-pulse 3s ease-in-out infinite;
 }
 
-@keyframes ring-pulse {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50%       { opacity: 0.9; transform: scale(1.02); }
+/* Decorative dots */
+.profile-photo-wrap::before {
+  content: '';
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 80px; height: 80px;
+  background-image: radial-gradient(circle, rgba(79,142,247,0.4) 1.5px, transparent 1.5px);
+  background-size: 12px 12px;
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.profile-photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 10px; left: 10px;
+  width: 60px; height: 60px;
+  background-image: radial-gradient(circle, rgba(0,212,255,0.4) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.1); }
 }
 
 .heading-section > p {
