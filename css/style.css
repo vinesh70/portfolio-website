@@ -945,12 +945,26 @@ section { position: relative; z-index: 1; }
 
 .contact-info .box a:hover { color: var(--blue); }
 
-/* Contact Form */
+/* Contact Form + Image — unified card */
+.block-9 {
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+}
+
+.block-9 > .col-md-6 {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form {
-  background: var(--glass) !important;
-  border: 1px solid var(--border) !important;
-  border-radius: var(--r-xl) !important;
+  flex: 1;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
   padding: 2.5rem !important;
+  border-left: 1px solid var(--border) !important;
 }
 
 .form-group { margin-bottom: 1.1rem; }
@@ -958,7 +972,7 @@ section { position: relative; z-index: 1; }
 .form-control {
   display: block;
   width: 100%;
-  background: rgba(255, 255, 255, 0.03) !important;
+  background: rgba(255, 255, 255, 0.04) !important;
   border: 1px solid var(--border) !important;
   border-radius: var(--r-md) !important;
   color: var(--t1) !important;
@@ -968,12 +982,13 @@ section { position: relative; z-index: 1; }
   transition: all var(--d1) var(--ease);
   outline: none;
   line-height: 1.5;
+  -webkit-appearance: none;
 }
 
 .form-control::placeholder { color: var(--t3) !important; }
 
 .form-control:focus {
-  background: rgba(79, 142, 247, 0.05) !important;
+  background: rgba(79, 142, 247, 0.06) !important;
   border-color: var(--blue) !important;
   box-shadow: 0 0 0 3px rgba(79, 142, 247, 0.14) !important;
   color: var(--t1) !important;
@@ -982,21 +997,28 @@ section { position: relative; z-index: 1; }
 
 textarea.form-control {
   resize: vertical;
-  min-height: 140px;
+  min-height: 150px;
+}
+
+input[type="submit"].btn {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  width: 100%;
 }
 
 /* Contact image panel */
 .block-9 .img {
-  min-height: 100%;
+  flex: 1;
   min-height: 400px;
   background-size: cover;
   background-position: center;
-  filter: grayscale(20%) brightness(0.9);
+  filter: grayscale(15%) brightness(0.85);
   transition: filter var(--d3) var(--ease);
-  border-radius: 0 var(--r-xl) var(--r-xl) 0;
 }
 
-.block-9 .img:hover { filter: grayscale(0%) brightness(1.05); }
+.block-9 .img:hover { filter: grayscale(0%) brightness(1); }
 
 /* ============================================================
    FOOTER
@@ -1247,11 +1269,14 @@ textarea.form-control {
 
   .block-9 .img {
     min-height: 220px;
-    margin-top: 2rem;
-    border-radius: var(--r-xl);
+    order: -1;
   }
 
-  .contact-form { padding: 1.5rem !important; }
+  .contact-form {
+    padding: 1.5rem !important;
+    border-left: none !important;
+    border-top: 1px solid var(--border) !important;
+  }
 
   .services-1 { margin-bottom: 1.5rem; }
 
