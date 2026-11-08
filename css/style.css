@@ -1342,6 +1342,125 @@ section { position: relative; z-index: 1; }
 }
 
 /* ============================================================
+   RESPONSIVE — Mobile Polish
+   ============================================================ */
+
+/* ── Tablet (≤ 991px) ── */
+@media (max-width: 991.98px) {
+  /* Profile photo — scale down gracefully */
+  .profile-photo-wrap { padding: 2rem; }
+  .profile-photo-ring { width: 260px; height: 260px; }
+  .profile-photo      { width: 230px; height: 230px; }
+  .profile-photo-glow { width: 175px; height: 175px; }
+
+  /* Contact heading */
+  .contact-title { font-size: 2.2rem; }
+
+  /* Cert cards — tighten gap */
+  .certs-row { gap: 1.25rem; }
+}
+
+/* ── Mobile (≤ 767px) ── */
+@media (max-width: 767.98px) {
+  /* Profile photo */
+  .profile-photo-wrap  { padding: 1.5rem 1rem; }
+  .profile-photo-ring  { width: 210px; height: 210px; }
+  .profile-photo       { width: 180px; height: 180px; }
+  .profile-photo-glow  { width: 140px; height: 140px; }
+
+  /* About info — allow label text to stay on one line */
+  .about-info li span:first-child { min-width: 76px; }
+
+  /* Resume section nav — horizontally scrollable on narrow screens */
+  #navi ul {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  #navi ul::-webkit-scrollbar { display: none; }
+
+  /* Resume wrap text — prevent overflow */
+  .resume-wrap .text h2 { word-break: break-word; }
+
+  /* Projects — ensure consistent inner gutters */
+  #project-section .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* Cert cards */
+  .cert-card { padding: 1.5rem 1.25rem; }
+
+  /* Contact */
+  .contact-title { font-size: 1.75rem; }
+
+  /* Footer columns — space between stacked items */
+  .ftco-footer-widget { margin-bottom: 2.5rem; }
+}
+
+/* ── Small mobile (≤ 575px) ── */
+@media (max-width: 575.98px) {
+  /* Sections */
+  .ftco-section { padding: 3.5rem 0; }
+
+  /* Hero badge */
+  .subheading {
+    font-size: 0.62rem;
+    letter-spacing: 2.5px;
+    padding: 0.35rem 1rem;
+  }
+
+  /* Profile photo */
+  .profile-photo-wrap  { padding: 1rem 0.5rem; }
+  .profile-photo-ring  { width: 180px; height: 180px; }
+  .profile-photo       { width: 152px; height: 152px; }
+  .profile-photo-glow  { width: 110px; height: 110px; }
+
+  /* About info */
+  .about-info li.d-flex { gap: 0.5rem; align-items: flex-start; }
+  .about-info li span:first-child { min-width: 55px; font-size: 0.65rem; }
+  .about-info li span:last-child  { font-size: 0.82rem; word-break: break-word; }
+
+  /* Resume cards — compact */
+  .resume-wrap      { padding: 1.1rem; gap: 0.75rem; }
+  .resume-wrap .icon { width: 40px; height: 40px; font-size: 1.05rem; }
+  .resume-wrap .text h2 { font-size: 0.95rem; }
+  .resume-wrap .text ul li { font-size: 0.8rem; }
+  .heading { font-size: 1.4rem; }
+
+  /* Skills grid icons */
+  .col.grow { padding: 0.85rem 0.5rem; min-width: 60px; }
+  .col.grow img.img-fluid { width: 30px; height: 30px; }
+
+  /* Cert cards */
+  .cert-card  { padding: 1.25rem 1rem; gap: 0.75rem; }
+  .cert-name  { font-size: 0.9rem; }
+
+  /* Contact */
+  .contact-title   { font-size: 1.5rem; }
+  .contact-eyebrow { font-size: 0.6rem; letter-spacing: 2px; }
+  .ccn-card  { padding: 0.85rem 1rem; gap: 0.75rem; }
+  .ccn-icon  { width: 38px; height: 38px; font-size: 0.95rem; }
+  .ccn-value { font-size: 0.82rem; }
+  .cfn-wrap  { padding: 1.25rem; }
+
+  /* Footer */
+  .ftco-heading-2         { font-size: 0.7rem; }
+  .ftco-footer-social li a { width: 36px; height: 36px; }
+}
+
+/* ── Very small (≤ 374px — iPhone SE, etc.) ── */
+@media (max-width: 374px) {
+  .profile-photo-ring { width: 158px; height: 158px; }
+  .profile-photo      { width: 132px; height: 132px; }
+  .contact-title      { font-size: 1.2rem; }
+  .heading-section h2 { font-size: clamp(1.4rem, 7vw, 2.6rem); }
+  .cfn-wrap           { padding: 1rem; }
+  .subheading         { font-size: 0.58rem; padding: 0.3rem 0.8rem; }
+}
+
+/* ============================================================
    RESUME PDF TEMPLATE
    Hardcoded colors — no CSS vars — always white/print-ready
    ============================================================ */
