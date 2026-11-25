@@ -1,204 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-	<title>Vinesh Ryapak | Software Engineer & AI Enthusiast</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Vinesh Ryapak | Software Engineer & AI Enthusiast</title>
 	<meta name="description" content="Vinesh Ryapak — Software Engineer at Deloitte USI, Full-Stack Developer & AI Enthusiast based in Mumbai, India.">
 
-	<meta property="og:title" content="Vinesh Ryapak | Software Engineer & AI Enthusiast" />
-	<meta property="og:description" content="Software Engineer at Deloitte USI · Full-Stack Developer · AI Enthusiast · Mumbai, India." />
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://vineshryapak.com/">
+	<meta property="og:title" content="Vinesh Ryapak | Software Engineer & AI Enthusiast">
+	<meta property="og:description" content="Software Engineer at Deloitte USI · Full-Stack Developer · AI Enthusiast · Mumbai, India.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Vinesh Ryapak | Software Engineer & AI Enthusiast">
+	<meta name="twitter:description" content="Software Engineer at Deloitte USI · Full-Stack Developer · AI Enthusiast · Mumbai, India.">
+	<meta name="theme-color" content="#09090f">
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 	<link rel="alternate icon" href="images/favicon1.png">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+	<script>(function(){try{var t=localStorage.getItem('portfolio-theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+	<link rel="stylesheet" href="css/tokens.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/sections.css">
+	<link rel="stylesheet" href="css/effects.css">
+	<link rel="stylesheet" href="css/pdf-resume.css">
 </head>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
+	<div class="scroll-progress" aria-hidden="true"><span></span></div>
+	<div class="cursor-ring" aria-hidden="true"></div>
+	<a href="#main-content" class="skip-link">Skip to main content</a>
 
+	<header>
+		<nav class="site-nav" id="site-nav" aria-label="Main navigation">
+			<div class="nav-container">
+				<a class="nav-brand" href="#home-section">Vinesh Ryapak</a>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target"
-		id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html">Vinesh Ryapak</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				<ul class="nav-links" id="nav-menu">
+					<li><a href="#home-section" class="nav-link">Home</a></li>
+					<li><a href="#about-section" class="nav-link">About</a></li>
+					<li><a href="#resume-section" class="nav-link">Resume</a></li>
+					<li><a href="#project-section" class="nav-link">Projects</a></li>
+					<li><a href="#contact-section" class="nav-link">Contact</a></li>
 				</ul>
+
+				<button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch to light theme">
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+				</button>
+
+				<button type="button" class="hamburger" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
 			</div>
-		</div>
-	</nav>
+		</nav>
+	</header>
 
+	<main id="main-content">
 
-	<!-- particles -->
-	<div id="particles-js"></div>
-
-	<section class="hero-wrap js-fullheight">
-		<!--       <div class="overlay"></div> -->
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Hey! I am</span>
-						<h1>Vinesh Ryapak</h1>
-						<h2>I like
-							<span class="txt-rotate" data-period="2000"
-								data-rotate='[ "Coding.", "Software Development.", "Data Science.", "Machine Learning.", "Full Stack Development.", "Problem Solving.", "Building AI Agents.", "Dancing.", "doing Deep Research.", "Late Night Coding.", "Exploring Tech.", "Building Cool Stuff."]'></span>
-						</h2>
-					</div>
+		<!-- HERO -->
+		<section id="home-section" class="hero" aria-labelledby="hero-name">
+			<div class="hero-fx" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i></div>
+			<div class="hero-container">
+				<div class="hero-content">
+					<span class="hero-eyebrow">Hey! I am</span>
+					<h1 id="hero-name" class="hero-name"><span class="word"><span style="--i:0">Vinesh</span></span> <span class="word"><span style="--i:1">Ryapak</span></span></h1>
+					<p class="hero-tagline">I like
+						<span class="txt-rotate" data-period="2000"
+							data-rotate='[ "Coding.", "Software Development.", "Data Science.", "Machine Learning.", "Full Stack Development.", "Problem Solving.", "Building AI Agents.", "Dancing.", "doing Deep Research.", "Late Night Coding.", "Exploring Tech.", "Building Cool Stuff."]'></span>
+					</p>
 				</div>
 			</div>
-			<div class="scrollDown">
-				<span></span>
-				<span></span>
-				<span></span>
+			<div class="scroll-cue" aria-hidden="true">
+				<span></span><span></span><span></span>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex align-items-center justify-content-center">
-					<div class="profile-photo-wrap">
-						<div class="profile-photo-ring"></div>
-						<img src="images/vinesh_passport.jpg" alt="Vinesh Ryapak" class="profile-photo">
-						<div class="profile-photo-glow"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5 px-4 px-md-0">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h2 class="mb-4">About Me</h2>
-							<p>Here's a little about me</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span><span>Vinesh Ryapak</span></li>
-								<li class="d-flex"><span>Email:</span><span>vineshryapak1234@gmail.com</span></li>
-								<li class="d-flex"><span>Phone:</span><span>+91 7021448700</span></li>
-								<li class="d-flex"><span>Country:</span> <span>India</span></li>
-								<li class="d-flex"><span>City:</span><span>Mumbai</span></li>
-							</ul>
+		<!-- ABOUT -->
+		<section class="section about-section" id="about-section" aria-labelledby="about-heading">
+			<div class="container">
+				<div class="about-grid">
+					<div class="about-photo reveal" data-reveal="left">
+						<div class="profile-frame">
+							<span class="orbit orbit-1" aria-hidden="true"></span><span class="orbit orbit-2" aria-hidden="true"></span>
+							<div class="profile-inner">
+								<img src="images/vinesh_passport.jpg" alt="Vinesh Ryapak" class="profile-img" width="280" height="280">
+							</div>
 						</div>
 					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<!-- <p><a href="" class="btn btn-primary py-3 px-3">Download CV</a></p> -->
-
-							<p>
-							<button id="resume-dl-btn" onclick="downloadResume()" class="btn btn-primary py-3 px-3">
-								Download Resume
-							</button>
-							</p>
-						
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-1">Education</a></li>
-							<li><a href="#page-2">Experience</a></li>
-							<li><a href="#page-3">Skills</a></li>
+					<div class="about-info reveal" data-reveal="right">
+						<span class="sec-index" aria-hidden="true">01</span>
+						<h2 id="about-heading" class="section-title">About Me</h2>
+						<p class="section-sub">Here's a little about me</p>
+						<ul class="info-list">
+							<li class="info-row"><span class="info-key">Name:</span><span class="info-val">Vinesh Ryapak</span></li>
+							<li class="info-row"><span class="info-key">Email:</span><span class="info-val">vineshryapak1234@gmail.com</span></li>
+							<li class="info-row"><span class="info-key">Phone:</span><span class="info-val">+91 7021448700</span></li>
+							<li class="info-row"><span class="info-key">Country:</span><span class="info-val">India</span></li>
+							<li class="info-row"><span class="info-key">City:</span><span class="info-val">Mumbai</span></li>
 						</ul>
-					</nav>
+						<button type="button" id="resume-dl-btn" onclick="downloadResume()" class="btn btn-primary">Download Resume</button>
+					</div>
 				</div>
-				<div class="col-md-9">
-					<div id="page-1" class="page one">
-						<h2 class="heading">Education</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-graduation-cap"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>Vidyalankar Instiute of Technology</h2>
-								<span class="position">Bachelor of Engineering</span>
-								<p><strong>Information Technology</strong></p>
-								
-								<span class="date">2021-2025</span>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-book"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>S.I.E.S College of Arts, Commerce & Science</h2>
-								<span class="position">Jr. College</span>
-								<p><strong>11th & 12th</strong></p>
-								<span class="date">2019-2021</span>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-book"></span>
-							</div>
-							<div class="text pl-3">
-								<h2>K.M.S English Medium School</h2>
-								<span class="position">School</span>
-								<p><strong>Science</strong></p>
-								<span class="date">2019 Passout</span>
-							</div>
-						</div>
+			</div>
+		</section>
+
+		<!-- RESUME -->
+		<section class="section resume-section" id="resume-section" aria-label="Resume">
+			<div class="container">
+				<div class="resume-layout">
+					<div class="resume-aside">
+						<span class="sec-index" aria-hidden="true">02</span>
+						<div class="resume-tabs" role="tablist" aria-label="Resume sections" aria-orientation="vertical" id="navi">
+						<button type="button" role="tab" id="tab-1" class="resume-tab" aria-controls="page-1" aria-selected="true">Education</button>
+						<button type="button" role="tab" id="tab-2" class="resume-tab" aria-controls="page-2" aria-selected="false" tabindex="-1">Experience</button>
+						<button type="button" role="tab" id="tab-3" class="resume-tab" aria-controls="page-3" aria-selected="false" tabindex="-1">Skills</button>
+					</div>
 					</div>
 
-					<div id="page-2" class="page two">
-						<h2 class="heading">Experience</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
+					<div class="resume-panels">
+
+						<div id="page-1" class="resume-panel" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
+							<h2 class="panel-title">Education</h2>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></div>
+								<div class="timeline-body">
+									<h3>Vidyalankar Instiute of Technology</h3>
+									<span class="entry-role">Bachelor of Engineering</span>
+									<p><strong>Information Technology</strong></p>
+									<span class="entry-date">2021-2025</span>
+								</div>
 							</div>
-							<div class="text pl-3">
-								<h2>Software Engineer 1</h2>
-								<span class="position">@ Deloitte USI &mdash; CDAO Analytics</span>
-								<p class="date">Sep 2025 - Present &nbsp;|&nbsp; <em>Analyst Trainee &rarr; SE1 (Jun 2026)</em></p>
-								<div class="c d-flex ftco-animate">
-									<div class="text pl-3">
-										<ul>
-											<li>Build and maintain enterprise data preparation pipelines, transforming raw datasets into clean, structured formats for analytics and reporting.</li>
-											<li>Collaborate with cross-functional CDAO teams to ensure data quality, consistency, and timely delivery aligned with business requirements.</li>
-											<li>Promoted from Analyst Trainee to Software Engineer 1 within 9 months based on delivery performance.</li>
-										</ul>
-									</div>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></div>
+								<div class="timeline-body">
+									<h3>S.I.E.S College of Arts, Commerce & Science</h3>
+									<span class="entry-role">Jr. College</span>
+									<p><strong>11th & 12th</strong></p>
+									<span class="entry-date">2019-2021</span>
+								</div>
+							</div>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg></div>
+								<div class="timeline-body">
+									<h3>K.M.S English Medium School</h3>
+									<span class="entry-role">School</span>
+									<p><strong>Science</strong></p>
+									<span class="entry-date">2019 Passout</span>
 								</div>
 							</div>
 						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
+
+						<div id="page-2" class="resume-panel" role="tabpanel" aria-labelledby="tab-2" tabindex="0" hidden>
+							<h2 class="panel-title">Experience</h2>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+								<div class="timeline-body">
+									<h3>Software Engineer 1</h3>
+									<span class="entry-role">@ Deloitte USI &mdash; CDAO Analytics</span>
+									<p class="entry-date-line">Sep 2025 - Present &nbsp;|&nbsp; <em>Analyst Trainee &rarr; SE1 (Jun 2026)</em></p>
+									<ul>
+										<li>Build and maintain enterprise data preparation pipelines, transforming raw datasets into clean, structured formats for analytics and reporting.</li>
+										<li>Collaborate with cross-functional CDAO teams to ensure data quality, consistency, and timely delivery aligned with business requirements.</li>
+										<li>Promoted from Analyst Trainee to Software Engineer 1 within 9 months based on delivery performance.</li>
+									</ul>
+								</div>
 							</div>
-							<div class="text pl-3">
-								<h2>Data Science Intern</h2>
-								<span class="position">@ Cognitio Knowledge Tech Pvt Ltd </span>
-								<p class="date">December 2023 - July 2024</p>
-								<div class="text pl-3">
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+								<div class="timeline-body">
+									<h3>Data Science Intern</h3>
+									<span class="entry-role">@ Cognitio Knowledge Tech Pvt Ltd </span>
+									<p class="entry-date-line">December 2023 - July 2024</p>
 									<ul>
 										<li>Managed data preprocessing, algorithm testing, and backend development.</li>
 										<li>Implemented Flask app for patient-driven chest X-ray report generation.</li>
@@ -206,94 +185,76 @@
 									</ul>
 								</div>
 							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+								<div class="timeline-body">
+									<h3>Participant</h3>
+									<span class="entry-role">@ Nirmal Hackathon</span>
+									<p class="entry-date-line">2nd May 2024</p>
+									<ul>
+										<li>Led a 24-hour sprint for "Automatic Radiology Report Generation".</li>
+										<li>Integrated WebDev and ML; enhanced technical skills and teamwork through project refinement and feedback.</li>
+									</ul>
+								</div>
 							</div>
-							<div class="text pl-3">
-								<h2>Participant</h2>
-								<span class="position">@ Nirmal Hackathon</span>
-								<p class="date">2nd May 2024</p>
-								<div class="c d-flex ftco-animate">
-									<div class="text pl-3">
-										<ul>
-											<li>Led a 24-hour sprint for "Automatic Radiology Report Generation".</li>
-											<li>Integrated WebDev and ML; enhanced technical skills and teamwork through project refinement and feedback.</li>
-										</ul>
-									</div>
+							<div class="timeline-entry">
+								<div class="timeline-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+								<div class="timeline-body">
+									<h3>Volunteer</h3>
+									<span class="entry-role">@ N.S.S (National Service Scheme)</span>
+									<p class="entry-date-line">Jun 2022 - May 2024</p>
+									<ul>
+										<li>Participated in diverse community service initiatives focusing on welfare, education, healthcare, conservation.</li>
+										<li>Engaged in a 7-day camp in Mulgoan Village, facilitating workshops, street plays, and cultural events.</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-suitcase"></span>
+
+						<div id="page-3" class="resume-panel" role="tabpanel" aria-labelledby="tab-3" tabindex="0" hidden>
+							<h2 class="panel-title">Skills</h2>
+							<div class="skills-grid">
+								<div class="skill-item"><img src="images/skills/javascript.png" alt="JavaScript" title="JavaScript" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/node.png" alt="NodeJS" title="NodeJS" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/react.png" alt="React" title="React" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/html.png" alt="HTML" title="HTML" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/css.png" alt="CSS" title="CSS" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/bootstrap.png" alt="Bootstrap" title="Bootstrap" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/cplusplus.png" alt="C++" title="C++" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/c.png" alt="C" title="C" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/mongo.png" alt="Mongo DB" title="Mongo DB" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/firebase.png" alt="FireBase" title="FireBase" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/java.png" alt="Java" title="Java" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/python.png" alt="Python" title="Python" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/langchain.svg" alt="LangChain" title="LangChain" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/langgraph.svg" alt="LangGraph" title="LangGraph" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/strands.svg" alt="Strands AI" title="Strands AI" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/rag.svg" alt="RAG" title="RAG" width="44" height="44" loading="lazy"></div>
+								<div class="skill-item"><img src="images/skills/aws.svg" alt="AWS" title="AWS" width="44" height="44" loading="lazy"></div>
 							</div>
-							<div class="text pl-3">
-								<h2>Volunteer</h2>
-								<span class="position">@ N.S.S (National Service Scheme)</span>
-								<p class="date">Jun 2022 - May 2024</p>
-								<div class="c d-flex ftco-animate">
-									<div class="text pl-3">
-										<ul>
-											<li>Participated in diverse community service initiatives focusing on welfare, education, healthcare, conservation.</li>
-											<li>Engaged in a 7-day camp in Mulgoan Village, facilitating workshops, street plays, and cultural events.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div id="page-3" class="page three">
-						<h2 class="heading">Skills</h2>
-						<!-- Skill Section -->
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/javascript.png"	title="JavaScript"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/node.png" title="NodeJS"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/react.png" title="React"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/html.png" title="HTML"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/css.png" title="CSS"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/bootstrap.png" title="Bootstrap"></div>
-						</div>
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/cplusplus.png" title="C++"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/c.png" title="C"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/mongo.png" title="Mongo DB"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/firebase.png" title="FireBase"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/java.png" title="Java"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/python.png" title="Python"></div>
-						</div>
-						<div class="row mb-4 ftco-animate">
-							<div class="col grow"><img class="img-fluid" src="images/skills/langchain.svg" title="LangChain"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/langgraph.svg" title="LangGraph"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/strands.svg" title="Strands AI"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/rag.svg" title="RAG"></div>
-							<div class="col grow"><img class="img-fluid" src="images/skills/aws.svg" title="AWS"></div>
 						</div>
 
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- ═══ CERTIFICATIONS ═══ -->
-	<section class="ftco-section cert-section" id="certifications-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-2">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<span class="subheading">CREDENTIALS</span>
-					<h2 class="mb-4">Certifications</h2>
+		<!-- CERTIFICATIONS -->
+		<section class="section cert-section" id="certifications-section" aria-labelledby="cert-heading">
+			<div class="container">
+				<div class="section-header reveal">
+					<span class="sec-index" aria-hidden="true">03</span>
+					<span class="eyebrow">CREDENTIALS</span>
+					<h2 id="cert-heading" class="section-title">Certifications</h2>
 				</div>
-			</div>
-			<div class="certs-row">
+			<div class="certs-grid">
 
 				<!-- AWS Certified Cloud Practitioner -->
 				<a href="https://www.credly.com/badges/8f0f9536-0a10-463a-ad37-a1cf8c028efd/public_url"
 				   target="_blank" rel="noopener noreferrer"
-				   class="cert-card aws-card ftco-animate">
-					<div class="cert-logo-wrap">
-						<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+				   class="cert-card aws-card reveal">
+					<div class="cert-logo">
+						<svg role="img" aria-hidden="true" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
 							<!-- AWS dark background -->
 							<rect width="60" height="60" rx="14" fill="#232F3E"/>
 							<!-- Subtle inner border ring -->
@@ -323,9 +284,9 @@
 				<!-- Claude AI Developer Foundations -->
 				<a href="https://www.credly.com/badges/2ac1748d-568f-4a10-97b2-d3dfae0bef84/public_url"
 				   target="_blank" rel="noopener noreferrer"
-				   class="cert-card claude-card ftco-animate">
-					<div class="cert-logo-wrap">
-						<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+				   class="cert-card claude-card reveal">
+					<div class="cert-logo">
+						<svg role="img" aria-hidden="true" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
 							<!-- Anthropic dark background -->
 							<rect width="60" height="60" rx="14" fill="#1E0E08"/>
 							<!-- Anthropic starburst — 8 thick rounded arms converging at centre -->
@@ -353,9 +314,9 @@
 				<!-- Google Professional Cloud Architect -->
 				<a href="https://www.credly.com/badges/025ddef9-cab1-4e78-a52b-2262e19116f0/public_url"
 				   target="_blank" rel="noopener noreferrer"
-				   class="cert-card gcp-card ftco-animate">
-					<div class="cert-logo-wrap">
-						<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+				   class="cert-card gcp-card reveal">
+					<div class="cert-logo">
+						<svg role="img" aria-hidden="true" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
 							<defs>
 								<!-- Clip cloud shape so colour bars stay inside the cloud -->
 								<clipPath id="gcp-cloud-clip">
@@ -386,266 +347,202 @@
 				</a>
 
 			</div>
-		</div>
-	</section>
-
-	<section class="ftco-section" id="project-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h2 class="mb-4">Projects</h2>
-				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a class="services-1 shadow" href="https://cinematch-your-personalized-movie-guide-vinesh-70.streamlit.app/">
-					
-						<div class="desc">
-							<h3 class="mb-4">CineMatch</h3>
-							<p><strong>• NLP • PorterStemmer • Streamlit</strong></p>
-							<p>CineMatch is an innovative movie recommendation system designed to enhance your viewing experience by suggesting movies tailored to your preferences. 
-							   Leveraging advanced Natural Language Processing (NLP) techniques, CineMatch analyzes movie plots, genres, keywords, and cast details to provide personalized recommendations.</p>
-						</div>
-					</a>
+		</section>
+
+		<!-- PROJECTS -->
+		<section class="section projects-section" id="project-section" aria-labelledby="projects-heading">
+			<div class="container">
+				<div class="section-header reveal">
+					<span class="sec-index" aria-hidden="true">04</span>
+					<h2 id="projects-heading" class="section-title">Projects</h2>
 				</div>
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://ems-app-vinesh-90.web.app/" target="_blank" class="services-1 shadow">
-						
-						<div class="desc">
-							<h3 class="mb-4">EmpManage Pro</h3>
-							<p><strong>• React • Mongodb • Express</strong></p>
-							<p>	Developed EmpManage Pro, an Employee Management System using React, Express, and MongoDB with full CRUD functionality and React-Toastify notifications. 
+				<div class="projects-grid">
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">NLP</span><span class="tag">PorterStemmer</span><span class="tag">Streamlit</span></div>
+							<h3 class="project-name">CineMatch</h3>
+							<p class="project-desc">CineMatch is an innovative movie recommendation system designed to enhance your viewing experience by suggesting movies tailored to your preferences.
+								Leveraging advanced Natural Language Processing (NLP) techniques, CineMatch analyzes movie plots, genres, keywords, and cast details to provide personalized recommendations.</p>
+							<a class="project-link" href="https://cinematch-your-personalized-movie-guide-vinesh-70.streamlit.app/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — CineMatch (opens in new tab)</span></a>
+						</div>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">React</span><span class="tag">Mongodb</span><span class="tag">Express</span></div>
+							<h3 class="project-name">EmpManage Pro</h3>
+							<p class="project-desc">Developed EmpManage Pro, an Employee Management System using React, Express, and MongoDB with full CRUD functionality and React-Toastify notifications.
 								Deployed on Firebase, Render, and MongoDB Atlas.</p>
+							<a class="project-link" href="https://ems-app-vinesh-90.web.app/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — EmpManage Pro (opens in new tab)</span></a>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://vinesh100.pythonanywhere.com/" target="_blank" class="services-1 shadow">
-						<div class="desc">
-							<h3 class="mb-4">Diabetes Prediction System</h3>
-							<p><strong>• HTML • CSS • Flask • ML  </strong></p>
-							<p>Achieved stellar accuracies in diabetes prediction: Logistic Regression, SVM, and Linear Regression at 100%, with KNN at 75%. 
-							   Developed a Flask app using Logistic Regression with preprocessing including one-hot encoding and MinMaxScaler.</p>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Flask</span><span class="tag">ML</span></div>
+							<h3 class="project-name">Diabetes Prediction System</h3>
+							<p class="project-desc">Achieved stellar accuracies in diabetes prediction: Logistic Regression, SVM, and Linear Regression at 100%, with KNN at 75%.
+								Developed a Flask app using Logistic Regression with preprocessing including one-hot encoding and MinMaxScaler.</p>
+							<a class="project-link" href="https://vinesh100.pythonanywhere.com/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — Diabetes Prediction System (opens in new tab)</span></a>
 						</div>
-					</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex mx-auto ftco-animate">
-					<a href="https://crypto-vista-vinesh-90.web.app/" target="_blank"
-						class="services-1 shadow">
-						<div class="desc">
-							<h3 class="mb-4">CryptoVista</h3>
-							<p><strong>• React • Axios</strong></p>
-							<p>Developed CryptoVista, a responsive React application for real-time oxyptocurrency tracking using CoinGecko API. 
-							   Implemented filtering functionality and integrated responsive design to optimal user experience across devices</p>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">React</span><span class="tag">Axios</span></div>
+							<h3 class="project-name">CryptoVista</h3>
+							<p class="project-desc">Developed CryptoVista, a responsive React application for real-time oxyptocurrency tracking using CoinGecko API.
+								Implemented filtering functionality and integrated responsive design to optimal user experience across devices</p>
+							<a class="project-link" href="https://crypto-vista-vinesh-90.web.app/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — CryptoVista (opens in new tab)</span></a>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://auth-app-24-9c772.web.app/" target="_blank"
-						class="services-1 shadow">
-						<div class="desc">
-							<h3 class="mb-4">FireAuthConnect</h3>
-							<p><strong>• React • Firebase</strong></p>
-							<p>AuthGuard is a React and Firebase-based authentication system featuring Signup, Login, Home, About, Forgot Password, Change Password,
-							   and a Nodemailer-powered Contact Us form. Deployed on Firebase, it ensures secure and seamless user management.</p>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">React</span><span class="tag">Firebase</span></div>
+							<h3 class="project-name">FireAuthConnect</h3>
+							<p class="project-desc">AuthGuard is a React and Firebase-based authentication system featuring Signup, Login, Home, About, Forgot Password, Change Password,
+								and a Nodemailer-powered Contact Us form. Deployed on Firebase, it ensures secure and seamless user management.</p>
+							<a class="project-link" href="https://auth-app-24-9c772.web.app/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — FireAuthConnect (opens in new tab)</span></a>
 						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="https://mailguard-intelligent-spam-detection-vinesh70.streamlit.app/" target="_blank"
-						class="services-1 shadow">
-						<div class="desc">
-							<h3 class="mb-4">Mailguard Spam Detection</h3>
-							<p><strong>• MNB Classifier • Streamlit</strong></p>
-							<p>MailGuard is an intelligent spam detection tool that classifies emails as spam or ham using a Multinomial Naive Bayes model. 
-							   Built with Streamlit, it leverages natural language processing techniques for text cleaning and feature extraction.
-							</p>
+					</article>
+
+					<article class="project-card reveal">
+						<div class="project-inner">
+							<div class="project-tags"><span class="tag">MNB Classifier</span><span class="tag">Streamlit</span></div>
+							<h3 class="project-name">Mailguard Spam Detection</h3>
+							<p class="project-desc">MailGuard is an intelligent spam detection tool that classifies emails as spam or ham using a Multinomial Naive Bayes model.
+								Built with Streamlit, it leverages natural language processing techniques for text cleaning and feature extraction.</p>
+							<a class="project-link" href="https://mailguard-intelligent-spam-detection-vinesh70.streamlit.app/" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg><span class="visually-hidden"> — Mailguard Spam Detection (opens in new tab)</span></a>
 						</div>
-					</a>
+					</article>
+
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
+		<!-- CONTACT -->
+		<section class="section contact-section" id="contact-section" aria-labelledby="contact-heading">
+			<div class="container">
+				<div class="contact-grid">
 
+					<div class="contact-info reveal" data-reveal="left">
+						<span class="sec-index" aria-hidden="true">05</span>
+						<p class="eyebrow">GET IN TOUCH</p>
+						<h2 id="contact-heading" class="section-title">Contact Me</h2>
 
-	<!-- <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>I'm <span>Available</span> for Hire</h2>
-					<p class="mt-3 mb-0">
-						<a id="fiverr" href="https://fiverr.com/ahsankhan26" target="_blank"
-							class="btn btn-primary py-3 px-5">Fiverr</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<section class="ftco-section contact-section" id="contact-section">
-		<div class="container">
-			<div class="row align-items-start">
-
-				<!-- Left: heading + contact cards -->
-				<div class="col-md-6 contact-left ftco-animate">
-					<p class="contact-eyebrow">GET IN TOUCH</p>
-					<h2 class="contact-title">Contact Me</h2>
-
-					<div class="ccn-card ftco-animate">
-						<div class="ccn-icon ccn-phone">
-							<span class="icon-phone2"></span>
-						</div>
-						<div class="ccn-text">
-							<span class="ccn-label">PHONE</span>
-							<a class="ccn-value ccn-value-link" href="tel:+917021448700">+91 7021448700</a>
+						<div class="contact-cards">
+							<div class="contact-card">
+								<div class="contact-icon phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+								<div class="contact-text">
+									<span class="contact-label">PHONE</span>
+									<a class="contact-value" href="tel:+917021448700">+91 7021448700</a>
+								</div>
+							</div>
+							<div class="contact-card">
+								<div class="contact-icon email" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></div>
+								<div class="contact-text">
+									<span class="contact-label">EMAIL</span>
+									<a class="contact-value" href="mailto:vineshryapak1234@gmail.com">vineshryapak1234@gmail.com</a>
+								</div>
+							</div>
+							<div class="contact-card">
+								<div class="contact-icon linkedin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.7 3.7 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></div>
+								<div class="contact-text">
+									<span class="contact-label">LINKEDIN</span>
+									<a class="contact-value" href="https://www.linkedin.com/in/vinesh-ryapak-73693a227/" target="_blank" rel="noopener noreferrer">vinesh-ryapak-73693a227</a>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="ccn-card ftco-animate">
-						<div class="ccn-icon ccn-email">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<div class="ccn-text">
-							<span class="ccn-label">EMAIL</span>
-							<a class="ccn-value ccn-value-link"
-								href="mailto:vineshryapak1234@gmail.com">vineshryapak1234@gmail.com</a>
-						</div>
-					</div>
-
-					<div class="ccn-card ftco-animate">
-						<div class="ccn-icon ccn-linkedin">
-							<span class="icon-linkedin"></span>
-						</div>
-						<div class="ccn-text">
-							<span class="ccn-label">LINKEDIN</span>
-							<a class="ccn-value ccn-value-link"
-								href="https://www.linkedin.com/in/vinesh-ryapak-73693a227/"
-								target="_blank" rel="noopener noreferrer">vinesh-ryapak-73693a227</a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Right: form -->
-				<div class="col-md-6 ftco-animate">
-					<div class="cfn-wrap">
-						<form method="POST" action="https://formsubmit.co/vineshryapak1234@gmail.com">
+					<div class="contact-form-wrap reveal" data-reveal="right">
+						<form method="POST" action="https://formsubmit.co/vineshryapak1234@gmail.com" id="contact-form">
 							<input type="hidden" name="_subject" value="New message from your portfolio">
-							<input type="text" name="_honey" tabindex="-1" autocomplete="off"
-								style="display: none" aria-hidden="true">
-							<div class="cfn-group">
-								<label class="cfn-label" for="contact-name">YOUR NAME</label>
-								<input id="contact-name" type="text" class="cfn-input" name="name"
-									placeholder="Your name" autocomplete="name" required>
+							<input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none" aria-hidden="true">
+							<div class="form-group">
+								<label for="contact-name">YOUR NAME</label>
+								<input id="contact-name" aria-describedby="contact-name-err" type="text" name="name" placeholder="Your name" autocomplete="name" required>
+								<p class="field-error" id="contact-name-err" hidden></p>
 							</div>
-							<div class="cfn-group">
-								<label class="cfn-label" for="contact-email">EMAIL ADDRESS</label>
-								<input id="contact-email" type="email" class="cfn-input" name="email"
-									placeholder="hello@example.com" autocomplete="email" required>
+							<div class="form-group">
+								<label for="contact-email">EMAIL ADDRESS</label>
+								<input id="contact-email" aria-describedby="contact-email-err" type="email" name="email" placeholder="hello@example.com" autocomplete="email" required>
+								<p class="field-error" id="contact-email-err" hidden></p>
 							</div>
-							<div class="cfn-group">
-								<label class="cfn-label" for="contact-message">MESSAGE</label>
-								<textarea id="contact-message" class="cfn-input cfn-textarea" name="message"
-									placeholder="Tell me about your project..." required></textarea>
+							<div class="form-group">
+								<label for="contact-message">MESSAGE</label>
+								<textarea id="contact-message" aria-describedby="contact-message-err" name="message" placeholder="Tell me about your project..." required></textarea>
+								<p class="field-error" id="contact-message-err" hidden></p>
 							</div>
-							<button type="submit" class="cfn-btn">Send Message <span>&#8594;</span></button>
+							<button type="submit" class="btn btn-primary btn-full">Send Message <span aria-hidden="true">&#8594;</span></button>
+							<p class="form-status" id="form-status" role="status" aria-live="polite"></p>
 						</form>
 					</div>
+
 				</div>
-
 			</div>
-		</div>
-	</section>
+		</section>
 
+	</main>
 
-	<footer class="ftco-footer ftco-section">
+	<footer class="site-footer">
 		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">About</h2>
-						<p>I like working with new tools and technologies</p>
-						<p class="mt-4"><u>Social Links</u></p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-							<li class="ftco-animate"><a href="https://github.com/vinesh70" target="_blank"><span
-										class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://stackoverflow.com/users/23440328/vinesh-ryapak"
-									target="_blank"><span class="icon-stack-overflow"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/vinesh_ig?igsh=MTdtYXAzZzVwejFiYg==" target="_blank"><span
-										class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2">Links</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a>
-							</li>
-							<li><a href="#project-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
-							</li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
-							</li>
-						</ul>
-					</div>
+			<div class="footer-grid">
+				<div class="footer-col">
+					<h2 class="footer-heading">About</h2>
+					<p>I like working with new tools and technologies</p>
+					<p class="mt-4"><u>Social Links</u></p>
+					<ul class="social-links">
+						<li><a href="https://github.com/vinesh70" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+						<li><a href="https://stackoverflow.com/users/23440328/vinesh-ryapak" target="_blank" rel="noopener noreferrer" aria-label="Stack Overflow"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 20.4v-5.3h1.8V22.2H2.9v-7.1h1.8v5.3zM6.8 14.8l8.8 1.9.4-1.7-8.8-1.9zm1.2-4.2 8.1 3.8.8-1.6-8.1-3.8zm2.2-4 6.9 5.8 1.1-1.4-6.9-5.8zM15.5 1.8l-1.4 1 5.4 7.2 1.4-1zM6.6 18.6h8.9v-1.8H6.6z"/></svg></a></li>
+						<li><a href="https://www.instagram.com/vinesh_ig?igsh=MTdtYXAzZzVwejFiYg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a></li>
+					</ul>
 				</div>
 
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2">Have a Question?</h2>
-						<div class="block-23 mb-3">
-							<ul>
-								<li><a><span class="icon icon-phone"></span><span class="text">+91 7021448700</span></a></li>
-								<li><a href=""><span
-											class="icon icon-envelope"></span><span
-											class="text">vineshryapak1234@gmail.com</span></a></li>
-							</ul>
-						</div>
-					</div>
+				<div class="footer-col">
+					<h2 class="footer-heading">Links</h2>
+					<ul>
+						<li><a href="#home-section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Home</a></li>
+						<li><a href="#about-section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>About</a></li>
+						<li><a href="#resume-section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Resume</a></li>
+						<li><a href="#project-section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Projects</a></li>
+						<li><a href="#contact-section"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h2 class="footer-heading">Have a Question?</h2>
+					<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>+91 7021448700</span></div>
+					<div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span>vineshryapak1234@gmail.com</span></div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<i class="icon-heart color-danger" aria-hidden="true"></i>
-					<i class="icon-heart color-danger" aria-hidden="true"></i>
-					<i class="icon-heart color-danger" aria-hidden="true"></i>
-					<p class="mt-5">Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script>
-					</p>
-				</div>
+
+			<div class="footer-bottom">
+				<p aria-hidden="true">
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-9.6-9.2C.9 8.5 2.6 5 6 5c2 0 3.4 1.1 4.3 2.5h3.4C14.6 6.1 16 5 18 5c3.4 0 5.1 3.5 3.6 6.8C19.5 16.3 12 21 12 21z"/></svg>
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-9.6-9.2C.9 8.5 2.6 5 6 5c2 0 3.4 1.1 4.3 2.5h3.4C14.6 6.1 16 5 18 5c3.4 0 5.1 3.5 3.6 6.8C19.5 16.3 12 21 12 21z"/></svg>
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-9.6-9.2C.9 8.5 2.6 5 6 5c2 0 3.4 1.1 4.3 2.5h3.4C14.6 6.1 16 5 18 5c3.4 0 5.1 3.5 3.6 6.8C19.5 16.3 12 21 12 21z"/></svg>
+				</p>
+				<p>Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script>
+				</p>
 			</div>
 		</div>
 	</footer>
 
+	<button type="button" class="to-top" id="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+	<div id="ftco-loader" class="show fullscreen" aria-hidden="true"><svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
 		</svg></div>
 
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-	<script src="js/particles.min.js"></script>
-	<script src="js/app.js"></script>
 	<script src="js/main.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<script src="js/effects.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" defer></script>
 
 	<!-- Hidden A4 resume template for PDF generation -->
 	<div id="pdf-resume-wrap">
@@ -837,6 +734,23 @@
 	</div><!-- /pdf-resume-wrap -->
 
 	<script>
+	function loadPdfFont() {
+		if (document.getElementById('pdf-font')) return document.fonts.ready;
+		var l = document.createElement('link');
+		l.id = 'pdf-font';
+		l.rel = 'stylesheet';
+		l.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap';
+		document.head.appendChild(l);
+		return new Promise(function (res) {
+			l.onload = function () {
+				Promise.all([400, 500, 600, 700, 800, 900].map(function (w) {
+					return document.fonts.load(w + ' 11px Poppins');
+				})).then(res, res);
+			};
+			l.onerror = res;
+		});
+	}
+
 	function downloadResume() {
 		var btn = document.getElementById('resume-dl-btn');
 		btn.disabled = true;
@@ -863,14 +777,18 @@
 			jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
 		};
 
-		/* Small delay so browser finishes rendering before capture */
-		setTimeout(function() {
-			html2pdf().set(opt).from(document.getElementById('pdf-resume')).save().then(function() {
-				wrap.style.display = 'none';
-				btn.disabled = false;
-				btn.textContent = 'Download Resume';
-			});
-		}, 300);
+		function reset() {
+			wrap.style.display = 'none';
+			btn.disabled = false;
+			btn.textContent = 'Download Resume';
+		}
+
+		loadPdfFont().then(function () {
+			/* Small delay so browser finishes rendering before capture */
+			setTimeout(function () {
+				html2pdf().set(opt).from(document.getElementById('pdf-resume')).save().then(reset, reset);
+			}, 300);
+		});
 	}
 	</script>
 

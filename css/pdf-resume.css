@@ -1,0 +1,335 @@
+/* PDF resume template — copied verbatim from the original stylesheet (since removed). Hardcoded colours; independent of site themes. */
+/* ════════════════════════════════════════
+   PDF Resume — Premium Dark Sidebar
+   ════════════════════════════════════════ */
+#pdf-resume-wrap {
+  position: fixed;
+  left: -9999px;
+  top: 0;
+  width: 794px;
+  z-index: -1;
+  pointer-events: none;
+  display: none;
+}
+
+#pdf-resume {
+  width: 794px;
+  height: 1123px;
+  overflow: hidden;
+  display: flex;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1e293b;
+  font-size: 11px;
+}
+
+/* ── Left Sidebar ── */
+.rp-side {
+  width: 228px;
+  flex-shrink: 0;
+  background: #0f172a;
+  padding: 28px 20px;
+}
+
+.rp-monogram {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  color: #38bdf8;
+  line-height: 1;
+  margin: 0 0 4px;
+}
+
+.rp-sname {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f1f5f9;
+  letter-spacing: -0.3px;
+  margin: 0 0 2px;
+}
+
+.rp-stitle {
+  font-size: 7px;
+  font-weight: 500;
+  color: #38bdf8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+.rp-sdivider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 0 0 12px;
+}
+
+.rp-scontact { margin-bottom: 16px; }
+
+.rp-sci {
+  font-size: 7.5px;
+  color: #94a3b8;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  line-height: 1.4;
+}
+
+.rp-sci a { color: #94a3b8; text-decoration: none; }
+
+.rp-sci-icon {
+  color: #38bdf8;
+  font-size: 8px;
+  flex-shrink: 0;
+  min-width: 10px;
+}
+
+/* Sidebar section */
+.rp-ssec { margin-bottom: 14px; }
+
+.rp-ssec-title {
+  font-size: 6.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #38bdf8;
+  margin: 0 0 7px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(56,189,248,0.25);
+}
+
+/* Skill text groups */
+.rp-sg { margin-bottom: 6px; }
+
+.rp-sg-label {
+  font-size: 6px;
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 1px;
+}
+
+.rp-sg-items {
+  font-size: 7.5px;
+  color: #cbd5e1;
+  line-height: 1.55;
+}
+
+/* Cert items */
+.rp-scert {
+  margin-bottom: 7px;
+  padding-left: 7px;
+  border-left: 2px solid #2563eb;
+}
+
+.rp-scert-name {
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+  line-height: 1.35;
+}
+
+.rp-scert-issuer {
+  font-size: 6.5px;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+.rp-scert-code {
+  display: inline-block;
+  font-size: 6px;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+}
+
+/* Education in sidebar */
+.rp-sedu { margin-bottom: 7px; }
+
+.rp-sedu-year {
+  font-size: 7px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.rp-sedu-name {
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #e2e8f0;
+  line-height: 1.3;
+}
+
+.rp-sedu-deg {
+  font-size: 6.5px;
+  color: #64748b;
+  margin-top: 1px;
+}
+
+/* Links in sidebar */
+.rp-slink {
+  display: block;
+  font-size: 7px;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.rp-slink a { color: #64748b; text-decoration: none; }
+
+/* ── Accent separator ── */
+.rp-vsep {
+  width: 3px;
+  background: #2563eb;
+  flex-shrink: 0;
+}
+
+/* ── Main Content ── */
+.rp-main {
+  flex: 1;
+  background: #ffffff;
+  padding: 26px 24px;
+  min-width: 0;
+}
+
+.rp-mname {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0f172a;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 0 0 4px;
+}
+
+.rp-mtitle {
+  font-size: 7.5px;
+  font-weight: 500;
+  color: #2563eb;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin: 0 0 11px;
+}
+
+.rp-mdivider {
+  height: 1.5px;
+  background: linear-gradient(90deg, #2563eb 0%, #bfdbfe 100%);
+  margin: 0 0 15px;
+}
+
+/* Main section */
+.rp-msec { margin-bottom: 14px; }
+
+.rp-msec-title {
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #0f172a;
+  margin: 0 0 9px;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid #2563eb;
+}
+
+/* Experience */
+.rp-exp { margin-bottom: 10px; }
+
+.rp-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.rp-exp-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.rp-exp-org {
+  font-size: 8px;
+  color: #2563eb;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.rp-exp-date {
+  font-size: 7px;
+  font-weight: 600;
+  color: #64748b;
+  white-space: nowrap;
+  background: #f8fafc;
+  padding: 2px 7px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  border: 1px solid #e2e8f0;
+  margin-top: 1px;
+}
+
+.rp-list { list-style: none; padding: 0; margin: 0; }
+
+.rp-list li {
+  font-size: 8px;
+  color: #334155;
+  line-height: 1.6;
+  padding-left: 10px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.rp-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-size: 7px;
+  top: 1px;
+}
+
+/* Projects */
+.rp-proj { margin-bottom: 9px; }
+
+.rp-proj-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+}
+
+.rp-proj-title {
+  font-size: 9px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.rp-proj-stack {
+  font-size: 6.5px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 1px 6px;
+  border-radius: 100px;
+  border: 1px solid #bfdbfe;
+}
+
+.rp-proj-link {
+  font-size: 6.5px;
+  font-weight: 700;
+  color: #0ea5e9;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 1px 6px;
+  border-radius: 100px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.rp-proj-desc {
+  font-size: 8px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
