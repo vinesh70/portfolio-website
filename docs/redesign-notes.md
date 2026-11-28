@@ -64,8 +64,10 @@ Purely decorative; deleting both files leaves a complete page.
 - `contact.php` + `PHPMailer/` unused; `contact.php` takes unvalidated input.
 - Phone and email in plain text (scrapable). Optional fix: assemble them in JS at runtime or use a contact-form-only approach. Not applied.
 - Personal Gmail (handled separately per your note).
-- **Phone mismatch:** page `+91 7021448700` vs PDF resume `+91 9820 596 491`.
-- **PDF resume content differs from the visible resume:** different schools (Thakur College / Our Lady of Remedy vs S.I.E.S / K.M.S), different Cognitio name ("Cognitio Analytics Pvt. Ltd." vs "Cognitio Knowledge Tech Pvt Ltd"), extra metrics (93.2%, 94.4%, "~12%", "97.4% precision", "Hackathon Winner … Top 10 Nationally") and project details that don't appear on the site. Left untouched.
+- **Resolved (2026-11-28):** PDF resume phone is now `+91 7021448700`, matching the page.
+- **Resolved (2026-11-28):** PDF Education now uses the website's three institutions (Vidyalankar Institute of Technology, S.I.E.S College of Arts, Commerce & Science, K.M.S English Medium School) with no percentages (the website shows none); PDF Certifications show the same three names/issuers/details as the website cards. The PDF spells "Institute" correctly; the website still has the "Instiute" typo.
+- **Resolved (2026-11-28):** PDF Work Experience (4 entries, all bullets, dates, promotion note) and Projects (all 6, with the website's tech tags, descriptions and live links) now mirror the website word for word. Old PDF-only claims (~12%, 40%, 97.4% precision, "Hackathon Winner / Top 10 Nationally", TMDb/JWT/Chart.js details) were removed. Main-column text in the PDF was enlarged slightly (body 8px to 9.5px) to use the page; layout was measured with real Poppins metrics (about 100px of spare room) but not rendered.
+- **Still differs between PDF and website (left as-is):** LinkedIn URL (PDF `linkedin.com/in/vinesh-ryapak` vs site `/in/vinesh-ryapak-73693a227`) and the PDF skills list. Typos copied verbatim from the site into the PDF: "an seamless", "oxyptocurrency".
 - Typos kept as-is: "Vidyalankar Instiute", "oxyptocurrency", "an seamless".
 - Resume PDF single-source proposal: build the PDF DOM from one JS data object that also renders the visible resume. Not done (it would force a decision on the content mismatches above).
 

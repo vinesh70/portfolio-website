@@ -14,7 +14,7 @@
 
 #pdf-resume {
   width: 794px;
-  height: 1123px;
+  height: 1122px; /* html2pdf fits 1122.9px of A4 at this width; 1123px spills a sliver onto page 2 */
   overflow: hidden;
   display: flex;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -242,21 +242,21 @@
 }
 
 .rp-exp-title {
-  font-size: 10px;
+  font-size: 11.5px;
   font-weight: 700;
   color: #0f172a;
   line-height: 1.3;
 }
 
 .rp-exp-org {
-  font-size: 8px;
+  font-size: 9.5px;
   color: #2563eb;
   font-weight: 500;
   margin-top: 1px;
 }
 
 .rp-exp-date {
-  font-size: 7px;
+  font-size: 7.5px;
   font-weight: 600;
   color: #64748b;
   white-space: nowrap;
@@ -271,7 +271,7 @@
 .rp-list { list-style: none; padding: 0; margin: 0; }
 
 .rp-list li {
-  font-size: 8px;
+  font-size: 9.5px;
   color: #334155;
   line-height: 1.6;
   padding-left: 10px;
@@ -284,7 +284,7 @@
   position: absolute;
   left: 0;
   color: #2563eb;
-  font-size: 7px;
+  font-size: 8px;
   top: 1px;
 }
 
@@ -300,13 +300,13 @@
 }
 
 .rp-proj-title {
-  font-size: 9px;
+  font-size: 10.5px;
   font-weight: 700;
   color: #0f172a;
 }
 
 .rp-proj-stack {
-  font-size: 6.5px;
+  font-size: 7px;
   font-weight: 600;
   color: #2563eb;
   background: #eff6ff;
@@ -316,7 +316,7 @@
 }
 
 .rp-proj-link {
-  font-size: 6.5px;
+  font-size: 7px;
   font-weight: 700;
   color: #0ea5e9;
   background: #f0f9ff;
@@ -328,7 +328,7 @@
 }
 
 .rp-proj-desc {
-  font-size: 8px;
+  font-size: 9.5px;
   color: #475569;
   line-height: 1.6;
   margin: 0;
